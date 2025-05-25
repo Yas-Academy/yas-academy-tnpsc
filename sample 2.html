@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Language Selector</title>
+  <link rel="icon" href="favicon.jpg" type="image/jpg">
+  <style>
+    body {
+      background: #001133;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+      font-family: Arial, sans-serif;
+    }
+    .btn {
+      background: linear-gradient(to right, #00bfff, #0072ff);
+      color: white;
+      padding: 15px 30px;
+      margin: 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #00bfff;
+      transition: transform 0.2s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #0072ff, #00bfff);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Choose Your Quiz Language</h1>
+
+  <button class="btn" onclick="window.open('english_questions.html', '_blank')">
+    📝 English TNPSC Questions
+  </button>
+
+  <button class="btn" onclick="window.open('tamil_questions.html', '_blank')">
+    📘 தமிழ் TNPSC கேள்விகள்
+  </button>
+
+</body>
+</html>

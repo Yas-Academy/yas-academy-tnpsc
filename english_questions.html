@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+  * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 20px;
+        font-size: 16px;
+      }
+      .question strong {
+        font-size: 1em;
+      }
+      #submit-btn {
+        width: 100%;
+        font-size: 16px;
+      }
+      .cta a {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+    </style>
+<script>
+  document.addEventListener('copy', e => e.preventDefault());
+  document.addEventListener('cut', e => e.preventDefault());
+  document.addEventListener('paste', e => e.preventDefault());
+  document.addEventListener('contextmenu', e => e.preventDefault());
+</script>
+
+  <meta charset="UTF-8">
+  <title>TNPSC English Quiz - YAS Academy</title>
+  <link rel="icon" href="favicon.jpg" type="image/jpg">
+  <style>
+    body {
+      background: #000020;
+      color: white;
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #00bfff;
+      text-shadow: 0 0 10px #00bfff;
+    }
+    .question {
+      background: rgba(255,255,255,0.05);
+      border-left: 4px solid #00bfff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    .question strong {
+      display: block;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+    .option {
+      display: block;
+      margin: 5px 0;
+    }
+    #submit-btn {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background: linear-gradient(to right, #00bfff, #0072ff);
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00bfff;
+      cursor: pointer;
+    }
+    #result {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #00ffcc;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .cta a {
+      background: linear-gradient(to right, #00ffcc, #00bfff);
+      padding: 12px 24px;
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ffff;
+      transition: transform 0.3s;
+    }
+    .cta a:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #00bfff, #00ffcc);
+    }
+  
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 20px;
+        font-size: 16px;
+      }
+      .question strong {
+        font-size: 1em;
+      }
+      #submit-btn {
+        width: 100%;
+        font-size: 16px;
+      }
+      .cta a {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+    </style>
+</head>
+<body oncontextmenu="return false"
+           onselectstart="return false"
+           ondragstart="return false"
+           onkeydown="return !(event.ctrlKey && ['u','s','c','a'].includes(event.key.toLowerCase()))">
+  <h1>TNPSC English Quiz – YAS Academy</h1>
+  <form id="quizForm">
+<div class="question"><strong>1. Who was the first woman Chief Minister of Tamil Nadu?</strong><label class="option"><input type="radio" name="q0" value="Jayalalithaa"> Jayalalithaa</label><label class="option"><input type="radio" name="q0" value="Janaki Ramachandran"> Janaki Ramachandran</label><label class="option"><input type="radio" name="q0" value="Indira Gandhi"> Indira Gandhi</label><label class="option"><input type="radio" name="q0" value="Sushma Swaraj"> Sushma Swaraj</label></div><div class="question"><strong>2. Which river is called ‘Dakshina Ganga’?</strong><label class="option"><input type="radio" name="q1" value="Krishna"> Krishna</label><label class="option"><input type="radio" name="q1" value="Godavari"> Godavari</label><label class="option"><input type="radio" name="q1" value="Kaveri"> Kaveri</label><label class="option"><input type="radio" name="q1" value="Narmada"> Narmada</label></div><div class="question"><strong>3. The founder of the Chola dynasty?</strong><label class="option"><input type="radio" name="q2" value="Karikala Cholan"> Karikala Cholan</label><label class="option"><input type="radio" name="q2" value="Rajaraja Cholan"> Rajaraja Cholan</label><label class="option"><input type="radio" name="q2" value="Vijayalaya Cholan"> Vijayalaya Cholan</label><label class="option"><input type="radio" name="q2" value="Kulothunga Cholan"> Kulothunga Cholan</label></div><div class="question"><strong>4. What is the capital of Puducherry?</strong><label class="option"><input type="radio" name="q3" value="Chennai"> Chennai</label><label class="option"><input type="radio" name="q3" value="Puducherry"> Puducherry</label><label class="option"><input type="radio" name="q3" value="Karaikal"> Karaikal</label><label class="option"><input type="radio" name="q3" value="Yanam"> Yanam</label></div><div class="question"><strong>5. Which Article of Indian Constitution deals with Right to Education?</strong><label class="option"><input type="radio" name="q4" value="Article 14"> Article 14</label><label class="option"><input type="radio" name="q4" value="Article 21A"> Article 21A</label><label class="option"><input type="radio" name="q4" value="Article 32"> Article 32</label><label class="option"><input type="radio" name="q4" value="Article 45"> Article 45</label></div><div class="question"><strong>6. Which vitamin is obtained from sunlight?</strong><label class="option"><input type="radio" name="q5" value="Vitamin A"> Vitamin A</label><label class="option"><input type="radio" name="q5" value="Vitamin B"> Vitamin B</label><label class="option"><input type="radio" name="q5" value="Vitamin C"> Vitamin C</label><label class="option"><input type="radio" name="q5" value="Vitamin D"> Vitamin D</label></div><div class="question"><strong>7. Which is the highest civilian award in India?</strong><label class="option"><input type="radio" name="q6" value="Padma Bhushan"> Padma Bhushan</label><label class="option"><input type="radio" name="q6" value="Padma Shri"> Padma Shri</label><label class="option"><input type="radio" name="q6" value="Padma Vibhushan"> Padma Vibhushan</label><label class="option"><input type="radio" name="q6" value="Bharat Ratna"> Bharat Ratna</label></div><div class="question"><strong>8. Which freedom fighter is known as 'Iron Man of India'?</strong><label class="option"><input type="radio" name="q7" value="Subhash Chandra Bose"> Subhash Chandra Bose</label><label class="option"><input type="radio" name="q7" value="Mahatma Gandhi"> Mahatma Gandhi</label><label class="option"><input type="radio" name="q7" value="Jawaharlal Nehru"> Jawaharlal Nehru</label><label class="option"><input type="radio" name="q7" value="Sardar Vallabhbhai Patel"> Sardar Vallabhbhai Patel</label></div><div class="question"><strong>9. Which of the following is a folk dance of Tamil Nadu?</strong><label class="option"><input type="radio" name="q8" value="Bharatanatyam"> Bharatanatyam</label><label class="option"><input type="radio" name="q8" value="Kathakali"> Kathakali</label><label class="option"><input type="radio" name="q8" value="Oyilattam"> Oyilattam</label><label class="option"><input type="radio" name="q8" value="Mohiniyattam"> Mohiniyattam</label></div><div class="question"><strong>10. Which planet is known as the Red Planet?</strong><label class="option"><input type="radio" name="q9" value="Earth"> Earth</label><label class="option"><input type="radio" name="q9" value="Mars"> Mars</label><label class="option"><input type="radio" name="q9" value="Venus"> Venus</label><label class="option"><input type="radio" name="q9" value="Jupiter"> Jupiter</label></div>
+    <button type="button" id="submit-btn" onclick="submitQuiz()">Submit</button>
+  </form>
+
+  <div id="result"></div>
+  <div class="cta" id="cta" style="display:none;">
+    <a href="https://yas-academy.github.io/yas-academy-tnpsc/courses.html" target="_blank">
+      🎓 Join YAS Academy
+    </a>
+  </div>
+
+  <script>
+    const correctAnswers = ['Janaki Ramachandran', 'Godavari', 'Vijayalaya Cholan', 'Puducherry', 'Article 21A', 'Vitamin D', 'Bharat Ratna', 'Sardar Vallabhbhai Patel', 'Oyilattam', 'Mars'];
+
+    function submitQuiz() {
+      let score = 0;
+      correctAnswers.forEach((ans, i) => {
+        const options = document.getElementsByName('q' + i);
+        for (const opt of options) {
+          if (opt.checked && opt.value === ans) {
+            score++;
+          }
+        }
+      });
+      document.getElementById("result").innerText = `🎉 You scored ${score} out of ${correctAnswers.length}`;
+      document.getElementById("cta").style.display = "block";
+    }
+  </script>
+</body>
+</html>
+

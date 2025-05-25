@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <title>தமிழ் TNPSC வினாடி வினா - YAS Academy</title>
+  <link rel="icon" href="favicon.jpg" type="image/jpg">
+  <style>
+    * {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    body {
+      background: #000020;
+      color: white;
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #00bfff;
+      text-shadow: 0 0 10px #00bfff;
+    }
+    .question {
+      background: rgba(255,255,255,0.05);
+      border-left: 4px solid #00bfff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    .question strong {
+      display: block;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+    .option {
+      display: block;
+      margin: 5px 0;
+    }
+    #submit-btn {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background: linear-gradient(to right, #00bfff, #0072ff);
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00bfff;
+      cursor: pointer;
+    }
+    #result {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #00ffcc;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .cta a {
+      background: linear-gradient(to right, #00ffcc, #00bfff);
+      padding: 12px 24px;
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ffff;
+      transition: transform 0.3s;
+    }
+    .cta a:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #00bfff, #00ffcc);
+    }
+
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 20px;
+        font-size: 16px;
+      }
+      .question strong {
+        font-size: 1em;
+      }
+      #submit-btn {
+        width: 100%;
+        font-size: 16px;
+      }
+      .cta a {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener('copy', e => e.preventDefault());
+    document.addEventListener('cut', e => e.preventDefault());
+    document.addEventListener('paste', e => e.preventDefault());
+    document.addEventListener('contextmenu', e => e.preventDefault());
+  </script>
+</head>
+<body oncontextmenu="return false"
+      onselectstart="return false"
+      ondragstart="return false"
+      onkeydown="return !(event.ctrlKey && ['u','s','c','a'].includes(event.key.toLowerCase()))">
+  <h1>தமிழ் TNPSC வினாடி வினா – YAS Academy</h1>
+  <form id="quizForm">
+<div class="question"><strong>1. தமிழ்நாட்டின் முதல் பெண் முதல்வர் யார்?</strong><label class="option"><input type="radio" name="q0" value="ஜெயலலிதா"> ஜெயலலிதா</label><label class="option"><input type="radio" name="q0" value="ஜானகி இராமச்சந்திரன்"> ஜானகி இராமச்சந்திரன்</label><label class="option"><input type="radio" name="q0" value="இந்திரா காந்தி"> இந்திரா காந்தி</label><label class="option"><input type="radio" name="q0" value="சுஷ்மா ஸ்வராஜ்"> சுஷ்மா ஸ்வராஜ்</label></div><div class="question"><strong>2. ‘தக்ஷிணா கங்கை’ என அழைக்கப்படும் நதி எது?</strong><label class="option"><input type="radio" name="q1" value="கிருஷ்ணா"> கிருஷ்ணா</label><label class="option"><input type="radio" name="q1" value="கோதாவரி"> கோதாவரி</label><label class="option"><input type="radio" name="q1" value="காவிரி"> காவிரி</label><label class="option"><input type="radio" name="q1" value="நர்மதா"> நர்மதா</label></div><div class="question"><strong>3. சோழ அரசரின் நிறுவனர் யார்?</strong><label class="option"><input type="radio" name="q2" value="கரிகால சோழன்"> கரிகால சோழன்</label><label class="option"><input type="radio" name="q2" value="ராஜராஜ சோழன்"> ராஜராஜ சோழன்</label><label class="option"><input type="radio" name="q2" value="விஜயாலய சோழன்"> விஜயாலய சோழன்</label><label class="option"><input type="radio" name="q2" value="குலோத்துங்க சோழன்"> குலோத்துங்க சோழன்</label></div><div class="question"><strong>4. புதுச்சேரியின் தலைநகரம் எது?</strong><label class="option"><input type="radio" name="q3" value="சென்னை"> சென்னை</label><label class="option"><input type="radio" name="q3" value="புதுச்சேரி"> புதுச்சேரி</label><label class="option"><input type="radio" name="q3" value="கரைக்கால்"> கரைக்கால்</label><label class="option"><input type="radio" name="q3" value="யானம்"> யானம்</label></div><div class="question"><strong>5. இந்திய அரசியலமைப்பில் கல்வி உரிமையை குறிப்பிடும் பிரிவு எது?</strong><label class="option"><input type="radio" name="q4" value="பிரிவு 14"> பிரிவு 14</label><label class="option"><input type="radio" name="q4" value="பிரிவு 21A"> பிரிவு 21A</label><label class="option"><input type="radio" name="q4" value="பிரிவு 32"> பிரிவு 32</label><label class="option"><input type="radio" name="q4" value="பிரிவு 45"> பிரிவு 45</label></div><div class="question"><strong>6. சூரிய ஒளியிலிருந்து கிடைக்கும் வைட்டமின் எது?</strong><label class="option"><input type="radio" name="q5" value="வைட்டமின் A"> வைட்டமின் A</label><label class="option"><input type="radio" name="q5" value="வைட்டமின் B"> வைட்டமின் B</label><label class="option"><input type="radio" name="q5" value="வைட்டமின் C"> வைட்டமின் C</label><label class="option"><input type="radio" name="q5" value="வைட்டமின் D"> வைட்டமின் D</label></div><div class="question"><strong>7. இந்தியாவின் உயரிய குடிமை விருது எது?</strong><label class="option"><input type="radio" name="q6" value="பத்ம பூஷண்"> பத்ம பூஷண்</label><label class="option"><input type="radio" name="q6" value="பத்ம ஸ்ரீ"> பத்ம ஸ்ரீ</label><label class="option"><input type="radio" name="q6" value="பத்ம விபூஷண்"> பத்ம விபூஷண்</label><label class="option"><input type="radio" name="q6" value="பாரத ரத்னா"> பாரத ரத்னா</label></div><div class="question"><strong>8. ‘இந்தியாவின் இரும்பு மனிதர்’ என அழைக்கப்படும் சுதந்திர போராட்ட வீரர் யார்?</strong><label class="option"><input type="radio" name="q7" value="சுபாஷ் சந்திர போஸ்"> சுபாஷ் சந்திர போஸ்</label><label class="option"><input type="radio" name="q7" value="மகாத்மா காந்தி"> மகாத்மா காந்தி</label><label class="option"><input type="radio" name="q7" value="ஜவஹர்லால் நேரு"> ஜவஹர்லால் நேரு</label><label class="option"><input type="radio" name="q7" value="சர்தார் வல்லபாய் பட்டேல்"> சர்தார் வல்லபாய் பட்டேல்</label></div><div class="question"><strong>9. பின்வரும் இடங்களில் தமிழ் நாட்டின் நாட்டிய வடிவம் எது?</strong><label class="option"><input type="radio" name="q8" value="பரதநாட்டியம்"> பரதநாட்டியம்</label><label class="option"><input type="radio" name="q8" value="கதகளி"> கதகளி</label><label class="option"><input type="radio" name="q8" value="ஒயிலாட்டம்"> ஒயிலாட்டம்</label><label class="option"><input type="radio" name="q8" value="மோகினியாட்டம்"> மோகினியாட்டம்</label></div><div class="question"><strong>10. ‘செம்பருத்தி கிரகம்’ என அழைக்கப்படும் கிரகம் எது?</strong><label class="option"><input type="radio" name="q9" value="பூமி"> பூமி</label><label class="option"><input type="radio" name="q9" value="செவ்வாய்"> செவ்வாய்</label><label class="option"><input type="radio" name="q9" value="சுக்ரன்"> சுக்ரன்</label><label class="option"><input type="radio" name="q9" value="வியாழன்"> வியாழன்</label></div>
+    <button type="button" id="submit-btn" onclick="submitQuiz()">சமர்ப்பிக்கவும்</button>
+  </form>
+  <div id="result"></div>
+  <div class="cta" id="cta" style="display:none;">
+    <a href="https://yas-academy.github.io/yas-academy-tnpsc/courses.html" target="_blank">
+      🎓 YAS Academyயில் சேரவும்
+    </a>
+  </div>
+  <script>
+    const correctAnswers = ['ஜானகி இராமச்சந்திரன்', 'கோதாவரி', 'விஜயாலய சோழன்', 'புதுச்சேரி', 'பிரிவு 21A', 'வைட்டமின் D', 'பாரத ரத்னா', 'சர்தார் வல்லபாய் பட்டேல்', 'ஒயிலாட்டம்', 'செவ்வாய்'];
+
+    function submitQuiz() {
+      let score = 0;
+      correctAnswers.forEach((ans, i) => {
+        const options = document.getElementsByName('q' + i);
+        for (const opt of options) {
+          if (opt.checked && opt.value === ans) {
+            score++;
+          }
+        }
+      });
+      document.getElementById("result").innerText = `🎉 நீங்கள் ${score} / ${correctAnswers.length} மதிப்பெண்கள் பெற்றுள்ளீர்கள்`;
+      document.getElementById("cta").style.display = "block";
+    }
+  </script>
+</body>
+</html>
