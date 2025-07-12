@@ -23,7 +23,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: var(--bg-color);
       overflow-x: hidden;
-      min-height: 115vh;
+      min-height: 100vh;
     }
 
     .logo-container {
@@ -79,7 +79,7 @@
     nav a:hover {
       color: var(--gold-color);
     }
-1
+
     main {
       padding: 30px 20px;
       display: grid;
@@ -102,7 +102,33 @@
       border-color: var(--gold-color);
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7), var(--gold-glow);
     }
+    .gold-dust {
+      position: absolute;
+      background-color: var(--gold-color);
+      border-radius: 50%;
+      pointer-events: none;
+      filter: drop-shadow(0 0 3px var(--gold-color));
+      animation: fall linear infinite;
+      z-index: 0;
+    }
+        @keyframes fall {
+      0% {
+        transform: translateY(-10px) rotate(0deg);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(70px) rotate(360deg);
+        opacity: 0;
+      }
+    }
 
+    
     .batch-section {
       grid-column: 1 / -1;
       background: linear-gradient(to right, #000000, #1a1a1a);
@@ -117,7 +143,7 @@
       color: var(--gold-color);
       text-shadow: var(--gold-glow);
       font-size: 2em;
-      margin-bottom: 10px;
+      margin-bottom: 25px;
     }
 
     .batch-cards-container {
@@ -274,7 +300,22 @@
       margin-top: 20px;
       font-weight: bold;
     }
-  </style>
+      .btn {
+    display: inline-block;
+    background: #00bfff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00bfff;
+    transition: transform 0.2s;
+  }
+  .btn:hover {
+    transform: scale(1.05);
+    background: #007acc;
+  }
+ </style>
 </head>
 <body>
   <header>
@@ -285,10 +326,8 @@
   <a href="sample 2.html" target="_blank">sample test</a>
   <a href="about.html" target="_blank">About</a>
   <a href="courses.html" target="_blank">Courses</a> 
-  <a href="#" target="_blank">Facilities</a>
-  <a href="#" target="_blank">Testimonials</a>
-  <a href="#" target="_blank">Contact</a>
-  </nav>
+  <a href="download" target="_blank">ques download</a>
+ 
   </header>
 
   <main>
@@ -298,13 +337,14 @@
       <div class="batch-cards-container">
          <div class="batch-card" >
           <h3>TNPSC group-4 </h3>
-          <p>Start Date: June 2 to 10, 2025</p>
+          <p>Start Date: June 12 to 25, 2025</p>
           <p>Mode: Offline & Online</p>
            <p>material only </p>
            <p>tests only </p>
            <p>fees :₹10,000 </p>
         <button class="register-btn" data-batch="Group 4 TNPSC Batch">Register Now</button>
       </div>
+      
         <div class="batch-card">
           <h3>Group 2 TNPSC Batch one last month </h3>
           <p>Start Date: June 10, 2025</p>
@@ -326,8 +366,8 @@
         </div>
         <div class="batch-card">
           <h3>VAO & Police Exams</h3>
-          <p>Start Date: july 30, 2025</p>
-          <p>Mode: Offline and online</p>
+          <p>Start Date: September 15, 2025</p>
+          <p>Mode: Offline</p>
           <button class="register-btn" data-batch="VAO & Police Exams">Register Now</button>
         </div>
       </div>
@@ -340,7 +380,7 @@
     <div class="card">
       <h2>Our Courses</h2>
       <ul>
-        <li>TNPSC Group 1, 2, 4</li>
+        <li>TNPSC Group 1, 2, 4</li>  
         <li>VAO & Police Exams</li>
         <li>Railway & SSC Exams</li>
       </ul>
